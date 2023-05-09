@@ -179,3 +179,34 @@ function test(){
 }
 
 document.querySelector("#vid").volume = 0.2;
+
+if(width > 1260) isDesktop = true;
+else isDesktop =false
+
+function openImagePhone(value){
+    if(isDesktop == false)
+    document.querySelector("#openImage").style.transform = "translateX(0px)";
+    let bgImage = document.querySelector("#bgimage"+value).style.backgroundImage.slice(5,-2);
+    document.querySelector("#openedImage").src = bgImage;
+}
+function openImage(value){
+    document.querySelector("#openImage").style.transform = "translateX(0px)";
+    let bgImage = document.querySelector("#bgimage"+value).style.backgroundImage.slice(5,-2);
+    document.querySelector("#openedImage").src = bgImage;
+}
+function closeImage(){  
+    document.querySelector("#openImage").style.transform = "translateX(100vw)";
+}
+
+function darken(value){
+    if(isDesktop == true){
+        document.querySelector("#container"+value).style.transform = "translateY(0px)";
+    }
+}
+
+function lightup(value){
+    if(isDesktop == true){
+    let containerHeight = document.querySelector("#container"+value).offsetHeight;
+    document.querySelector("#container"+value).style.transform = "translateY(" + containerHeight + "px)";
+    }
+}
