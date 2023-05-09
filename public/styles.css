@@ -578,6 +578,10 @@ video {
   left: 0px;
 }
 
+.left-2{
+  left: 0.5rem;
+}
+
 .left-5{
   left: 1.25rem;
 }
@@ -622,12 +626,24 @@ video {
   z-index: -10;
 }
 
+.z-10{
+  z-index: 10;
+}
+
+.z-30{
+  z-index: 30;
+}
+
 .z-40{
   z-index: 40;
 }
 
 .z-50{
   z-index: 50;
+}
+
+.z-\[100\]{
+  z-index: 100;
 }
 
 .col-span-2{
@@ -757,6 +773,10 @@ video {
   height: 2.5rem;
 }
 
+.h-12{
+  height: 3rem;
+}
+
 .h-14{
   height: 3.5rem;
 }
@@ -813,6 +833,10 @@ video {
   height: 50vh;
 }
 
+.h-\[60vh\]{
+  height: 60vh;
+}
+
 .h-\[64px\]{
   height: 64px;
 }
@@ -825,12 +849,20 @@ video {
   height: 90vh;
 }
 
+.h-\[calc\(100vh-4rem\)\]{
+  height: calc(100vh - 4rem);
+}
+
 .h-auto{
   height: auto;
 }
 
 .h-full{
   height: 100%;
+}
+
+.max-h-\[80vh\]{
+  max-height: 80vh;
 }
 
 .min-h-\[100vh\]{
@@ -935,6 +967,15 @@ video {
 
 .max-w-\[32em\]{
   max-width: 32em;
+}
+
+.max-w-\[90vw\]{
+  max-width: 90vw;
+}
+
+.translate-x-\[100vw\]{
+  --tw-translate-x: 100vw;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .translate-x-\[200vw\]{
@@ -1145,6 +1186,11 @@ video {
   background-color: rgb(244 248 251 / var(--tw-bg-opacity));
 }
 
+.bg-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 0 0 / var(--tw-bg-opacity));
+}
+
 .bg-slate-300{
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
@@ -1168,6 +1214,10 @@ video {
   --tw-bg-opacity: 0;
 }
 
+.bg-opacity-70{
+  --tw-bg-opacity: 0.7;
+}
+
 .bg-cover{
   background-size: cover;
 }
@@ -1186,6 +1236,11 @@ video {
 
 .bg-no-repeat{
   background-repeat: no-repeat;
+}
+
+.object-contain{
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .p-2{
@@ -1554,6 +1609,10 @@ video {
     height: 80vh;
   }
 
+  .md\:max-h-\[80vh\]{
+    max-height: 80vh;
+  }
+
   .md\:w-14{
     width: 3.5rem;
   }
@@ -1585,6 +1644,10 @@ video {
   .md\:w-fit{
     width: -moz-fit-content;
     width: fit-content;
+  }
+
+  .md\:max-w-\[80vw\]{
+    max-width: 80vw;
   }
 
   .md\:grid-cols-2{
